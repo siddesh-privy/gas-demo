@@ -31,6 +31,7 @@ export async function POST(req: NextRequest) {
           data,
           chainId: 84532,
         },
+        sponsor: true,
       });
       return NextResponse.json({ hash });
     } catch (transactionError) {
